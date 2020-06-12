@@ -36,7 +36,7 @@ function gdEmModelinstanceGetCategories($cats, $post_id)
             // and access them directly
             // $cat_slug = $cat->output('#_CATEGORYSLUG');
             // $cat_id = $cat->output('#_CATEGORYID');
-            $cats[] = $cmstaxonomiesresolver->getCategorySlug($cat).$cmstaxonomiesresolver->getCategoryId($cat);
+            $cats[] = $cmstaxonomiesresolver->getCategorySlug($cat).$cmstaxonomiesresolver->getCategoryID($cat);
         }
     }
 
