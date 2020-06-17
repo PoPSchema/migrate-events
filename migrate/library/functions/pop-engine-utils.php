@@ -2,7 +2,7 @@
 use PoP\Hooks\Facades\HooksAPIFacade;
 use PoP\Events\Facades\EventTypeAPIFacade;
 use PoP\CustomPosts\Facades\CustomPostTypeAPIFacade;
-use PoP\CustomPosts\Routing\RouteNatures as PostRouteNatures;
+use PoP\CustomPosts\Routing\RouteNatures as CustomPostRouteNatures;
 
 class PoP_Events_Engine_Hooks
 {
@@ -24,7 +24,7 @@ class PoP_Events_Engine_Hooks
         $nature = $vars['nature'];
 
         // Attributes needed to match the RouteModuleProcessor vars conditions
-        if ($nature == PostRouteNatures::POST) {
+        if ($nature == CustomPostRouteNatures::CUSTOMPOST) {
             $customPostTypeAPI = CustomPostTypeAPIFacade::getInstance();
             $eventTypeAPI = EventTypeAPIFacade::getInstance();
             $post_id = $vars['routing-state']['queried-object-id'];
