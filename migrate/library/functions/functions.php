@@ -24,7 +24,7 @@ function eventHasCategory($event, $cat)
 // {
 //     $eventTypeAPI = EventTypeAPIFacade::getInstance();
 //     if ($eventTypeAPI->isEvent($post_id)) {
-//         $event = $eventTypeAPI->getEventByPostId($post_id);
+//         $event = $eventTypeAPI->getEvent($post_id);
 //         return array_keys($eventTypeAPI->getCategories($event));
 //     }
 
