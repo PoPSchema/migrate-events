@@ -26,7 +26,7 @@ class PoP_Events_Engine_Hooks
         if ($nature == CustomPostRouteNatures::CUSTOMPOST) {
             $eventTypeAPI = EventTypeAPIFacade::getInstance();
             $customPostType = $vars['routing-state']['queried-object-post-type'];
-            if ($customPostType == $eventTypeAPI->getEventPostType()) {
+            if ($customPostType == $eventTypeAPI->getEventCustomPostType()) {
                 $post_id = $vars['routing-state']['queried-object-id'];
                 if ($eventTypeAPI->isFutureEvent($post_id)) {
                     $vars['routing-state']['queried-object-is-future-event'] = true;

@@ -8,7 +8,7 @@ function popEmAllcontentTaxqueryItems($tax_query_items)
     if (POP_EVENTS_CAT_ALL) {
         $eventTypeAPI = EventTypeAPIFacade::getInstance();
         $cmsapplicationpostsapi = \PoP\Application\PostsFunctionAPIFactory::getInstance();
-        if (in_array($eventTypeAPI->getEventPostType(), $cmsapplicationpostsapi->getAllcontentPostTypes())) {
+        if (in_array($eventTypeAPI->getEventCustomPostType(), $cmsapplicationpostsapi->getAllcontentPostTypes())) {
             $tax_query_items[] = array(
                 'taxonomy' => $eventTypeAPI->getEventCategoryTaxonomy(),
                 'terms' => array(

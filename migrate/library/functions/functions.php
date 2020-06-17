@@ -8,7 +8,7 @@ use PoP\Events\Facades\EventTypeAPIFacade;
 function gdEmAddEventPosttype($post_types)
 {
     $eventTypeAPI = EventTypeAPIFacade::getInstance();
-    $post_types[] = $eventTypeAPI->getEventPostType();
+    $post_types[] = $eventTypeAPI->getEventCustomPostType();
     return $post_types;
 }
 
