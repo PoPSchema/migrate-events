@@ -11,7 +11,7 @@ function popEmModuleInstanceComponents($components)
 
     // Add source param for Organizations: view their profile as Community or Organization
     $vars = ApplicationState::getVars();
-    if ($vars['routing-state']['is-post']) {
+    if ($vars['routing-state']['is-custompost']) {
         $post_id = $vars['routing-state']['queried-object-id'];
         $eventTypeAPI = EventTypeAPIFacade::getInstance();
         if ($eventTypeAPI->isEvent($post_id)) {
