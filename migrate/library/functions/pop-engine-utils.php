@@ -2,7 +2,7 @@
 use PoP\Hooks\Facades\HooksAPIFacade;
 use PoP\Events\Facades\EventTypeAPIFacade;
 use PoP\CustomPosts\Facades\CustomPostTypeAPIFacade;
-use PoP\Posts\Routing\RouteNatures as PostRouteNatures;
+use PoP\CustomPosts\Routing\RouteNatures as PostRouteNatures;
 
 class PoP_Events_Engine_Hooks
 {
