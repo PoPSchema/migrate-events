@@ -1,7 +1,6 @@
 <?php
 use PoP\Hooks\Facades\HooksAPIFacade;
 use PoP\Events\Facades\EventTypeAPIFacade;
-use PoP\CustomPosts\Facades\CustomPostTypeAPIFacade;
 use PoP\CustomPosts\Routing\RouteNatures as CustomPostRouteNatures;
 
 class PoP_Events_Engine_Hooks
@@ -25,10 +24,10 @@ class PoP_Events_Engine_Hooks
 
         // Attributes needed to match the RouteModuleProcessor vars conditions
         if ($nature == CustomPostRouteNatures::CUSTOMPOST) {
-            $customPostTypeAPI = CustomPostTypeAPIFacade::getInstance();
             $eventTypeAPI = EventTypeAPIFacade::getInstance();
-            $post_id = $vars['routing-state']['queried-object-id'];
-            if ($customPostTypeAPI->getCustomPostType($post_id) == $eventTypeAPI->getEventPostType()) {
+            $customPostType = $vars['routing-state']['queried-object-post-type'];
+            if ($customPostType == $eventTypeAPI->getEventPostType()) {
+                $post_id = $vars['routing-state']['queried-object-id'];
                 if ($eventTypeAPI->isFutureEvent($post_id)) {
                     $vars['routing-state']['queried-object-is-future-event'] = true;
                 } elseif ($eventTypeAPI->isCurrentEvent($post_id)) {
