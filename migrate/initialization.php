@@ -5,10 +5,10 @@ class PoP_Events_Initialization
     {
         load_plugin_textdomain('pop-events', false, dirname(plugin_basename(__FILE__)).'/languages');
 
-        // /**
-        //  * Load the Config
-        //  */
-        // include_once 'config/load.php';
+        /**
+         * Load the Config
+         */
+        include_once 'config/load.php';
 
         /**
          * Load the Contracts
