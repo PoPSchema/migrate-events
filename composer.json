@@ -1,7 +1,7 @@
 {
-    "name": "getpop/migrate-events",
+    "name": "pop-schema/migrate-events",
     "type": "library",
-    "description": "(Temporary package) Migrate code to package https://github.com/getpop/events. Target package description: Adds support for events",
+    "description": "(Temporary package) Migrate code to package https://github.com/pop-schema/events. Target package description: Adds support for events",
     "keywords": [
         "PoP",
         "events"
@@ -19,7 +19,7 @@
     "prefer-stable": true,
     "require": {
         "php": "~7.2",
-        "getpop/migrate-locations": "dev-master"
+        "pop-schema/migrate-locations": "dev-master"
     },
     "extra": {
         "branch-alias": {

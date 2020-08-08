@@ -7,7 +7,7 @@ Code to be migrated, from legacy PHP 5 code to modern PHP 7 code ([read more her
 Via Composer
 
 ``` bash
-composer require getpop/migrate-events
+composer require pop-schema/migrate-events
 ```
 
 ## Security
@@ -23,17 +23,17 @@ If you discover any security related issues, please email leo@getpop.org instead
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/getpop/events.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/pop-schema/events.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/getpop/events/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/getpop/events.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/getpop/events.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/getpop/events.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/pop-schema/events/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/pop-schema/events.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/pop-schema/events.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/pop-schema/events.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/getpop/events
-[link-travis]: https://travis-ci.org/getpop/events
-[link-scrutinizer]: https://scrutinizer-ci.com/g/getpop/events/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/getpop/events
-[link-downloads]: https://packagist.org/packages/getpop/events
+[link-packagist]: https://packagist.org/packages/pop-schema/events
+[link-travis]: https://travis-ci.org/pop-schema/events
+[link-scrutinizer]: https://scrutinizer-ci.com/g/pop-schema/events/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/pop-schema/events
+[link-downloads]: https://packagist.org/packages/pop-schema/events
 [link-author]: https://github.com/leoloso
 [link-contributors]: ../../contributors
